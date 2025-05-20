@@ -86,15 +86,14 @@ public with sharing class FlowControlLoopsCollections {
      */
     public static String checkNumber(Integer a) {
         if (a == null) {
-            return null; // Replace null with the variable you used to store the result
-        }
-        if (a > 0) {
+            return null;
+        } else if (a > 0) {
             return 'Positive';
-        }
-        if (a < 0) {
+        } else if (a < 0) {
             return 'Negative';
+        } else {
+            return 'Zero';
         }
-        return 'Zero';
     }
 
     /**
