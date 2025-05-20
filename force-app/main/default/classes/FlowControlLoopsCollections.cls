@@ -46,7 +46,8 @@ public with sharing class FlowControlLoopsCollections {
      * @return true if the person is eligible to vote, false otherwise.
      */
     public static Boolean votingEligibility(Integer age) {
-        return age >= 18; // Replace null with the variable you used to store the result
+        final Integer VOTING_AGE = 18;
+        return age >= VOTING_AGE;
     }
 
     /**
